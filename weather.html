@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Las Vegas Travel Place</title>
+    <style>
+      .geeks {
+        width: 700px;
+        height: 500px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+      .geeks img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+      }
+
+      .geeks:hover img {
+        transform: scale(2.5);
+      }
+      h1 {
+        color: lightblue;
+      }
+      @keyframes animate {
+        from {
+          text-shadow: 0 0 20px lightsalmon;
+        }
+        to {
+          text-shadow: 0 0 50px blue, 0 0 10px rgb(137, 178, 255);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Homepage</a>
+      <a href="accomodations.html">Accomodations</a>
+      <a href="events.html">Events</a>
+      <a href="excursions.html">Excursions</a>
+      <a href="food.html">Food</a>
+      <a href="culture.html">Culture</a>
+      <a href="travel.html">Travel</a>
+      <a href="weather.html">Weather</a>
+    </div>
+
+    <br />
+    <center>
+      <h1 style="font-size: 50px;"><u>Weather in Las Vegas</u></h1>
+      <a
+        class="weatherwidget-io"
+        href="https://forecast7.com/en/36d17n115d14/las-vegas/"
+        data-label_1="LAS VEGAS"
+        data-label_2="WEATHER"
+        data-theme="original"
+        >LAS VEGAS WEATHER</a
+      >
+      <script>
+        !(function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://weatherwidget.io/js/widget.min.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        })(document, "script", "weatherwidget-io-js");
+      </script>
+      <h3>
+        The weather in Las Vegas is mostly hot and dry for most of the year.
+        Best to travel to from March to May and from September to November.
+      </h3>
+      <div class="geeks">
+        <img
+          src="https://www.theworldandthensome.com/wp-content/uploads/2020/07/How-warm-is-it-in-Las-Vegas-in-March.jpg"
+        />
+      </div>
+    </center>
+  </body>
+</html>
